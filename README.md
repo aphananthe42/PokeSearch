@@ -8,7 +8,7 @@ TextFieldに図鑑IDを入力すると、リアクティブにポケモンの図
 
 - MVVMアーキテクチャ
 
-- RxSwift
+- RxSwift, RxCocoa, RxOptional
 
 - Alamofire
 
