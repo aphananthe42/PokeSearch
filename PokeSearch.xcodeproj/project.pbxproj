@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		729203D04830DD53F816904B /* Pods_PokeSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E130F379151AFCDF1EEA79 /* Pods_PokeSearch.framework */; };
+		71DE2DDC26A6A90F00C6E9B0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 71DE2DDB26A6A90F00C6E9B0 /* RxCocoa */; };
+		71DE2DDE26A6A90F00C6E9B0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 71DE2DDD26A6A90F00C6E9B0 /* RxSwift */; };
+		71DE2DE126A6A97800C6E9B0 /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 71DE2DE026A6A97800C6E9B0 /* RxOptional */; };
+		71DE2DE426A6AA0500C6E9B0 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 71DE2DE326A6AA0500C6E9B0 /* NSObject-Rx */; };
+		71DE2DE726A6AA9100C6E9B0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 71DE2DE626A6AA9100C6E9B0 /* Alamofire */; };
 		DF6EA0E5255FB94200F62059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EA0E4255FB94200F62059 /* AppDelegate.swift */; };
 		DF6EA0E7255FB94200F62059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EA0E6255FB94200F62059 /* SceneDelegate.swift */; };
 		DF6EA0E9255FB94200F62059 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6EA0E8255FB94200F62059 /* ViewController.swift */; };
@@ -22,9 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1787693E234E74EC88026016 /* Pods-PokeSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSearch.debug.xcconfig"; path = "Target Support Files/Pods-PokeSearch/Pods-PokeSearch.debug.xcconfig"; sourceTree = "<group>"; };
-		1D621F51E2B622FBA35C7A5B /* Pods-PokeSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeSearch.release.xcconfig"; path = "Target Support Files/Pods-PokeSearch/Pods-PokeSearch.release.xcconfig"; sourceTree = "<group>"; };
-		27E130F379151AFCDF1EEA79 /* Pods_PokeSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EA0E1255FB94200F62059 /* PokeSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6EA0E4255FB94200F62059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6EA0E6255FB94200F62059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,28 +46,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729203D04830DD53F816904B /* Pods_PokeSearch.framework in Frameworks */,
+				71DE2DE726A6AA9100C6E9B0 /* Alamofire in Frameworks */,
+				71DE2DDE26A6A90F00C6E9B0 /* RxSwift in Frameworks */,
+				71DE2DDC26A6A90F00C6E9B0 /* RxCocoa in Frameworks */,
+				71DE2DE426A6AA0500C6E9B0 /* NSObject-Rx in Frameworks */,
+				71DE2DE126A6A97800C6E9B0 /* RxOptional in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1133B7575B7FF2D5DA79895A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				27E130F379151AFCDF1EEA79 /* Pods_PokeSearch.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DF6EA0D8255FB94200F62059 = {
 			isa = PBXGroup;
 			children = (
 				DF6EA0E3255FB94200F62059 /* PokeSearch */,
 				DF6EA0E2255FB94200F62059 /* Products */,
-				F4F6B8B5F3B260B372E9CBB2 /* Pods */,
-				1133B7575B7FF2D5DA79895A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,15 +116,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F4F6B8B5F3B260B372E9CBB2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1787693E234E74EC88026016 /* Pods-PokeSearch.debug.xcconfig */,
-				1D621F51E2B622FBA35C7A5B /* Pods-PokeSearch.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,17 +123,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF6EA0F5255FB94600F62059 /* Build configuration list for PBXNativeTarget "PokeSearch" */;
 			buildPhases = (
-				D379E6F76183D8FD3B5672EB /* [CP] Check Pods Manifest.lock */,
 				DF6EA0DD255FB94200F62059 /* Sources */,
 				DF6EA0DE255FB94200F62059 /* Frameworks */,
 				DF6EA0DF255FB94200F62059 /* Resources */,
-				EEDF72CA68C30C4D57F4B556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PokeSearch;
+			packageProductDependencies = (
+				71DE2DDB26A6A90F00C6E9B0 /* RxCocoa */,
+				71DE2DDD26A6A90F00C6E9B0 /* RxSwift */,
+				71DE2DE026A6A97800C6E9B0 /* RxOptional */,
+				71DE2DE326A6AA0500C6E9B0 /* NSObject-Rx */,
+				71DE2DE626A6AA9100C6E9B0 /* Alamofire */,
+			);
 			productName = PokeSearch;
 			productReference = DF6EA0E1255FB94200F62059 /* PokeSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +166,12 @@
 				Base,
 			);
 			mainGroup = DF6EA0D8255FB94200F62059;
+			packageReferences = (
+				71DE2DDA26A6A90F00C6E9B0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				71DE2DDF26A6A97800C6E9B0 /* XCRemoteSwiftPackageReference "RxOptional" */,
+				71DE2DE226A6AA0500C6E9B0 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
+				71DE2DE526A6AA9100C6E9B0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DF6EA0E2255FB94200F62059 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,48 +194,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D379E6F76183D8FD3B5672EB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PokeSearch-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEDF72CA68C30C4D57F4B556 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PokeSearch/Pods-PokeSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PokeSearch/Pods-PokeSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokeSearch/Pods-PokeSearch-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF6EA0DD255FB94200F62059 /* Sources */ = {
@@ -395,7 +350,6 @@
 		};
 		DF6EA0F6255FB94600F62059 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1787693E234E74EC88026016 /* Pods-PokeSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,7 +369,6 @@
 		};
 		DF6EA0F7255FB94600F62059 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D621F51E2B622FBA35C7A5B /* Pods-PokeSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -455,6 +408,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71DE2DDA26A6A90F00C6E9B0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+		71DE2DDF26A6A97800C6E9B0 /* XCRemoteSwiftPackageReference "RxOptional" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxOptional";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.3;
+			};
+		};
+		71DE2DE226A6AA0500C6E9B0 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/NSObject-Rx";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		71DE2DE526A6AA9100C6E9B0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71DE2DDB26A6A90F00C6E9B0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71DE2DDA26A6A90F00C6E9B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		71DE2DDD26A6A90F00C6E9B0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71DE2DDA26A6A90F00C6E9B0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		71DE2DE026A6A97800C6E9B0 /* RxOptional */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71DE2DDF26A6A97800C6E9B0 /* XCRemoteSwiftPackageReference "RxOptional" */;
+			productName = RxOptional;
+		};
+		71DE2DE326A6AA0500C6E9B0 /* NSObject-Rx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71DE2DE226A6AA0500C6E9B0 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			productName = "NSObject-Rx";
+		};
+		71DE2DE626A6AA9100C6E9B0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71DE2DE526A6AA9100C6E9B0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF6EA0D9255FB94200F62059 /* Project object */;
 }
